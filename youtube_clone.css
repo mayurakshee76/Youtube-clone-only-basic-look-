@@ -1,0 +1,317 @@
+*{
+  padding: 0;
+  margin: 0;
+/*outline: solid white 1px;*/
+}
+.bg {
+    background-color: #0f0f0f;
+  }
+ /*BOTTOM SIDEBAR*/ 
+ .sidenav {
+    height: 100%;
+    width: 80px;
+    position: static;
+    z-index: 1;
+    top: -2;
+    left: 0;
+    background-color: #0f0f0f;
+    overflow-x: hidden;
+    padding-top: 20px;
+  }
+  .sidebar_p{
+    font-size: 10px;
+    color: #ffffff;
+
+  }
+  .sidenav a {
+    padding: 8px 8px 6px 30px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #ffffff;
+    display: block;
+  }
+
+a.a{ /*Top Sidebar Links*/
+  text-align: center;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+a.a:hover{
+  background-color: #434040;
+}
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  .main {
+    margin-left: 80px; /* Same as the width of the sidenav */
+    font-size: 28px; /* Increased text to enable scrolling */
+    padding: 0px 10px;
+  }
+  
+  
+/*TOP-NAVBAR WITH SIDEBAR*/
+  
+  .navbar {
+    background-color: #0f0f0f;
+  }
+  .sidebar {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: -250px;
+    background-color: #0f0f0f;
+    overflow-x: hidden;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+  .sidebar a {
+    padding: 25px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 15px;
+    color: #ffffff;
+    display: block;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+  }
+  
+  .list1 {
+    border-bottom: solid white 1px;
+  }
+  
+  .sidebar a:hover {
+    color: #ffffff;
+  }
+  
+  .sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    left: -50px;
+    font-size: 20px;
+    margin-left: 50px;
+  }
+  
+  .logo_close{
+    position: absolute;
+    top:25px;
+    left: 90px;
+  }
+  
+  .openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #0f0f0f;
+    color: white;
+    /*  padding: 10px 15px; */
+    border: none;
+  }
+  
+  .openbtn:hover {
+    background-color: #201c1c;
+  }
+  
+  #main {
+    -webkit-transition: margin-left 0.5s;
+    -o-transition: margin-left 0.5s;
+    transition: margin-left 0.5s;
+    padding: 16px;
+  }
+  
+  .navbar {
+    padding: 0;
+  }
+  
+  .logo{
+  /*padding-bottom: 4px;*/
+  position: fixed;
+  left:60px;
+  }
+  
+  form {
+    width: 650px;
+  }
+  
+  .search {
+    border-radius: 50rem 0px 0px 50rem;
+    background-color: #121212;
+    border-top-color: #434040;
+    border-left-color: #434040;
+    border-bottom-color: #434040;
+    border-right-color: #434040;
+    
+  }
+  
+  
+  .search input{
+    margin: 0; 
+  }
+  
+  .search_button{
+    border-radius: 0px 50rem 50rem 0px;
+    border-top-color: #434040;
+    border-right-color: #434040;
+    border-bottom-color: #434040;
+    border-left-color: #434040;
+    background-color: #222222;
+    width: 80px;
+  }
+  .mic{
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: start;
+    color: #ffffff;
+  }
+  .mic-button{
+    background-color: #222222;
+    border-radius:50%;
+    width: 40px;
+    height: 40px;
+    border-top-color:#222222;
+    border-right-color: #222222;
+    border-bottom-color: #222222;
+    border-left-color: #222222;
+  }
+  .icons a{
+    padding: 10px;
+    color: #ffffff;
+    font-size: 20px;
+  }
+  .button-group {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    gap: 20px;
+  }
+  .button {
+    border: none;
+    background-color: #272727;
+    color: #ffffff;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 15px;
+    font-weight: 600;
+  }
+
+  .button:hover{
+    background-color: #ffffff;
+    color: #0f0f0f;
+  }
+  /*Videp*/
+  .container.videos {
+    text-align:start;
+   }
+  div.bg-video{
+    padding-left: 0;
+  }
+ 
+  iframe {
+    width: 350px;
+    height: 250px;
+  }
+  .caption{
+    color: #ffffff;
+  }
+  
+  .channel-img {
+    height: 50px;
+    width: 50px;
+  }
+  .div-img{
+    text-align: center;
+    padding: 0%;
+}
+.div-cap{
+  text-align: start;
+  padding-left: 0%;
+}
+p.para{
+  font-size: 14px;
+    margin-bottom: 2px;
+    font-weight: 400;
+}
+
+  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+
+  @media (min-width: 992px) and (max-width: 1200px) {
+    iframe {
+      width: 300px;
+      height: 200px;
+    }
+    form{
+        width:500px
+    }
+  }
+  @media (min-width: 768px) and (max-width: 992px) {
+    iframe {
+      width: 280px;
+      height: 180px;
+    }
+    form{
+        width:300px
+    }
+  }
+  @media (min-width: 450px) and (max-width: 768px) {
+    iframe {
+      width: 400px;
+      height: 240px;
+    }
+  }
+  @media(max-width:768px){
+ /*   iframe {
+      width: 340px;
+      height: 240px;
+    }*/
+        form{
+        width: 200px;
+    }
+
+     .sidenav{
+     display: none;
+     }
+  }
+
+  @media (max-height: 450px) {
+    form{
+      width: 100px;
+  }
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+
+    .sidebar {
+      padding-top: 15px;
+    }
+    .sidebar a {
+      font-size: 18px;
+    }
+    .icons {
+      padding: 15px;
+      color: #ffffff;
+    }
+  }
+
+  @media(max-width:400px){
+    iframe {
+      width: 280px;
+      height: 260px;
+    }
+  }
+  @media(max-width:350px){
+    iframe {
+      width: 210px;
+      height: 200px;
+    }
+    .channel-img {
+      height: 40px;
+      width: 40px;
+    }
+  }
+  
